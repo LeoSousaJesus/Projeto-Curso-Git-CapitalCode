@@ -3,6 +3,7 @@
 **Mostrando a distância dos planetas em relação ao Sol de uma forma interativa.**
 
 ![VERSÃO DO SW]( https://img.shields.io/badge/Space_Code_Versão-1.1.4-blue.svg)
+
 ![Curso Git](https://img.shields.io/badge/Curso%20Git-01-lightgrey.svg)
 
 ### Sobre o Projeto
