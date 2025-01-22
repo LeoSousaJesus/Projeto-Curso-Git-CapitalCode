@@ -15,3 +15,4 @@ Ao clicar em um planeta, a função `setDistancia` é acionada, iniciando uma an
 ```javascript
 function setDistancia($distancia) {
     $('#distancia').animateNumber({ number: $distancia });
+}
