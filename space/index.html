@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Space Simulator- Capital Code</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="chat/css/style.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+</head>
+
+<body>
+  <div class="container" >
+  <div class="card-clone" >
+    <div class="card" >
+      <div class="inner">
+        <div class="front">
+          <div class="info-box">
+            <h1>Space Capital</h1>
+            <hr>
+            <h2>A distância do planeta para o sol é de <span class="count" id="distancia">50</span> x 10<sup>6</sup> km</h2>
+          </div>
+          <div class="planet p-1" onclick="setDistancia('90')">
+          <div class="ring"></div>
+        </div>
+        <div class="planet p-2" onclick="setDistancia('300')"></div>
+        <div class="planet p-3" onclick="setDistancia('100')"></div>        
+          <svg onclick="setDistancia('250')"><use xlink:href="#wave"></use></svg>
+        </div>
+        <div class="planet sun"></div>
+        <div class="planet p-1">
+          <div class="ring"></div>
+        </div>
+        <div class="planet p-2" onclick="setDistancia('400')"></div>
+        <div class="planet p-3" onclick="setDistancia('150')"></div>        
+        <div class="star shooting-star"></div>        
+        <div class="star shooting-star"></div>        
+        <div class="star shooting-star"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+  <symbol id="wave" viewBox="0 0 120 200">
+    <path d="m0,320c0,0 60,-80 7,-155c-55,-75 18,-195 18,-195c0,0 -75,0 -75,0c0,0 5,354 5,354c0,0 45,0 45,0z" />
+  </symbol>
+</svg>
+  
+<!--chat-->
+<div id="body"> 
+  <div id="chat-circle" class="btn btn-danger btn-gradient waves-effect waves-light" >
+    <div id="chat-overlay" ></div>
+      <img src="chat/favicon.png" style="width: 70px;">
+    </div>
+
+    <div class="chat-box">
+      <div class="chat-box-header">
+        Capital Code, a sua plataforma de cursos online!
+        <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script  src="js/index.js"></script>
+<script  src="chat/js/index.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script type="text/javascript">
+  function setDistancia($distancia){
+    $('#distancia').animateNumber({ number: $distancia });
+  }
+
+</script>
+
+
+
+</body>
+
+</html>
