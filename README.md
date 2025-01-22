@@ -14,8 +14,4 @@ Ao clicar em um planeta, a função `setDistancia` é acionada, iniciando uma an
 
 ```javascript
 function setDistancia($distancia) {
-    $('#distancia').animateNumber({ number: $distancia }, {
-        easing: 'easeInQuad', // Efeito de animação
-        duration: 1500 // Duração da animação em milissegundos
-    });
-}
+    $('#distancia').animateNumber({ number: $distancia });
