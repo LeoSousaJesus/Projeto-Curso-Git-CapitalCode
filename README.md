@@ -4,7 +4,7 @@
 
 ![VERSÃO DO SW]( https://img.shields.io/badge/Space_Code_version-v.1.1.7-blue.svg)
 
-![Curso Git](https://img.shields.io/badge/Curso%20Git-01-lightgrey.svg)
+![Curso Git](https://img.shields.io/badge/Curso%20Git-01-orange.svg)
 
 ### Sobre o Projeto
 O Space Capital é um projeto web que permite aos usuários explorarem o sistema solar de forma intuitiva. Com um simples clique em um planeta, você descobre a sua distância em Km em relação ao Sol, acompanhada de uma animação suave e envolvente.
