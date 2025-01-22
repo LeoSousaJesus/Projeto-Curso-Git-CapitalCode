@@ -1,34 +1,32 @@
-1.  ![CAPITAL CODE-LOGO](http://capitalcode.com.br/spacecapital.jpg)
+# [Capital Code](http://capitalcode.com.br)- Space Capital, mostra a distância dos planetas em relação ao sol de uma forma diferente! #
 
-2.  # [Capital Code](http://capitalcode.com.br)- Space Capital, mostra a distância dos planetas em relação ao sol de uma forma diferente! #
+![VERSÃO DO SW](https://img.shields.io/badge/Spacel%20Capital--%20version-v.1.1.7-blue.svg)
 
-3.  ![VERSÃO DO SW](https://img.shields.io/badge/Spacel%20Capital--%20version-v.1.1.7-blue.svg)
+![Curso Git](https://img.shields.io/badge/Curso%20Git-01-lightgrey.svg)
+ 
+O **Space  Capital**  mostra a interação com os planetas, com um simples toque na superfície do  
+planeta você consegue ver a sua distância em km até o sol.
 
-4. ![Curso Git](https://img.shields.io/badge/Curso%20Git-01-lightgrey.svg)
-6. 
+O Space  Capital foi feito totalmente com Javascript e Jquery, apresentando assim o mais alto desempenho no  Front-end.
 
-7.  O **Space  Capital**  interação com os planetas, com um simples toque na superfície do  
-8.  planeta você consegue ver a sua distância em km até o sol.
+## Interação com o usuário
 
-9.  O Space  Capital foi feito totalmente com Javascript e Jquery, apresentando assim o mais alto desempenho 
-10.  no  Front-end.
+O evento do clique, aciona a função que seta as informações sobre o planeta:
 
-11.  ## Interação com o usuário
+```html
+<div class="planet p-1" onclick="setDistancia('90')">
 
-12.  O evento do clique, aciona a função que seta as informações sobre o planeta:
+##  Número com animação
 
-13.    <div class="planet p-1" onclick="setDistancia('90')">
+-  Ao clicar no botão, a função "setDistancia"  é chamada e uma animação do contador é realizada dessa forma:
 
-14.  ##  Número com animação
 
-15.  Ao clicar no botão, a função "setDistancia"  é chamada e uma animação do contador é realizada dessa forma:
+    function setDistancia($distancia){
+        $('#distancia').animateNumber({ number: $distancia })
+    }
 
-16.    function setDistancia($distancia){
-17.   $('#distancia').animateNumber({ number: $distancia })
-18.    }
+## Plugin para contador
 
-19.  ## Plugin para contador
+-  [jquery-animateNumber](https://github.com/aishek/jquery-animateNumber)
 
-20.    -  [jquery-animateNumber](https://github.com/aishek/jquery-animateNumber)
-
-21.  Para mais informações acesse [a plataforma](http://capitalcode.com.br).
+Para mais informações acesse [a plataforma](http://capitalcode.com.br).
